@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="'/api/movies/' + ${id}" method="PUT" id="edit-form">
+    <input type="text" name="name"/>
+    <input type="integer" name="length"/>
+    <button id="delete-movie">delete</button>
+    <input type="submit" value="save"/>
+</form>
+<script src="/js/form.js"></script>
+</body>
+</html>
